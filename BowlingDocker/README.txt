@@ -2,7 +2,6 @@
 * Creare l'immagine ed eseguire il container
 */
 
-
 Pre requisiti:
 * Macchina linux
 * Avere dinsttalato docker
