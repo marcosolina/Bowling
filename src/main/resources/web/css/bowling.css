@@ -1,0 +1,97 @@
+/*
+	Siccome sto usando delle mie librerie
+	qui faccio l'override di alcuni stili
+	in modo da cambiare qualcosa
+*/
+
+.mia-nav-bar, .mia-section-footer{
+	background-color: #60b7b4;
+}
+
+.mia-section-body{
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+
+/*
+	Css che ho usato per il gioco
+*/
+.bowling-game{
+	
+}
+
+.score-board{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.frame-container{
+	border: 1px solid;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+.frame-name{
+	text-align: center;
+    height: calc(100% / 3);
+    border-bottom: 2px solid #000000;
+    background-color: #60b7b3;
+    margin-bottom: 7px;
+}
+
+.frame-primo-lancio, .frame-secondo-lancio, .frame-terzo-lancio{
+	width: calc(100% / 3);
+	text-align: center;
+	flex-grow: 1;
+}
+.frame-secondo-lancio, .frame-terzo-lancio{
+	border-left: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+.frame-container-lanci{
+	display: flex;
+    height: calc(100% / 3);
+}
+
+.frame-punteggio{
+	text-align: center;
+    height: calc(100% / 3);
+    padding-top: 4px;
+}
+
+.container-lanci{
+	
+}
+
+.barra-utente-partita{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-utente{
+	
+}
+
+.container-btn-elimina-partita{
+	
+}
+
+.bottone-lancio{
+	margin: 2px;
+}
+
+.badge-nome{
+	background-color: #60b7b4;
+	color: #FFFFFF;
+	border-radius: 5px;
+	padding: 2px 5px;
+    display: inline;
+}
+

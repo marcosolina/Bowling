@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{external/fragments/pageLayout.html}">
+<!-- 
+###############################################################
+INFORMATION
+This is a page template to use as example
+
+PUT all your view under /WEB-INF/view
+
+###############################################################
+
+-->
+<body>
+	<div layout:fragment="custom-header-right" th:remove="tag">
+		Bowling
+	</div>
+	<div layout:fragment="custom-header-left" th:remove="tag">
+		Marco Solina
+	</div>
+
+	<div layout:fragment="custom-header" th:remove="tag" th:with="appName=${T(com.marco.webjar.MarcoWebJarUtils).APP_NAME}">
+	
+		<link rel='stylesheet'	th:href="'/' + ${appName} + '/resources/css/bowling.css'"	type='text/css'/>
+		<script type="text/babel" th:src="'/' + ${appName} + '/resources/reactjs/Board.jsx'"></script>
+		<script type="text/babel" th:src="'/' + ${appName} + '/resources/reactjs/Game.jsx'"></script>
+		<script type="text/babel" th:src="'/' + ${appName} + '/resources/reactjs/Frame.jsx'"></script>
+	</div>
+
+
+	<div layout:fragment="page-content">
+	
+		<!-- START Content of your page -->
+	
+		<!-- This is the content of your page, do what you want here, like in this example code -->
+	
+		<div class="container" id="divContainer">
+			
+		</div>
+		
+		
+		<script type="text/babel">
+			ReactDOM.render(<Board />, document.getElementById('divContainer'));
+		</script>
+		<!-- END Content of your page -->
+	</div>
+</body>
+</html>
