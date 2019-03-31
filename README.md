@@ -4,11 +4,11 @@ Dentro la cartella BowlingDocker trovate le istruzioni per eseguire il progetto 
 
 Tool / Framework / Librerie utilizzate:
 * Backend:
-** Java
-** Spring MVC
-** Thymeleaf (Per la parte statica della pagina WEB)
+  * Java
+  * Spring MVC
+  * Thymeleaf (Per la parte statica della pagina WEB)
 * Front End:
-** React JS per la parte dinamica della pagina WEB
-** Bootsrap
-** Pnotify
-** jQuery
+  * React JS per la parte dinamica della pagina WEB
+  * Bootsrap
+  * Pnotify
+  * jQuery
