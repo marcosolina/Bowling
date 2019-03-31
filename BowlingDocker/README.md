@@ -4,7 +4,7 @@
 
 Pre requisiti:
 * Macchina linux
-* Avere dinsttalato docker
+* Avere installato docker [clicca qui per dettagli](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
 Passi da eseguire:
 * scaricare la cartella BowlingDocker sulla macchin dove avete installato Docker
